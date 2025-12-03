@@ -7,7 +7,9 @@ let supabaseClient: ReturnType<typeof createClient> | null = null;
 export const getSupabaseClient = () => {
   if (!supabaseClient) {
     // Use environment variable if available, otherwise construct from projectId
-    const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || `https://${projectId}.supabase.co`;
+    const supabaseUrl = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_URL) 
+      ? import.meta.env.VITE_SUPABASE_URL 
+      : `https://${projectId}.supabase.co`;
     supabaseClient = createClient(supabaseUrl, publicAnonKey);
   }
   return supabaseClient;

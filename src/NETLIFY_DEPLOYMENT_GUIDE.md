@@ -4,6 +4,20 @@ Complete step-by-step guide to deploy your GACE application on Netlify with Supa
 
 ---
 
+## ⚠️ IMPORTANT: Environment Variables Behavior
+
+**In Figma Make (Development):**
+- The app uses hardcoded values as fallbacks
+- `import.meta.env` may be undefined - this is normal!
+- App works with built-in credentials
+
+**In Netlify (Production):**
+- The app reads from `VITE_*` environment variables
+- Vite injects these at build time
+- You MUST set environment variables in Netlify dashboard
+
+---
+
 ## 📋 Prerequisites
 
 Before you start, gather these values from your Supabase Dashboard:
