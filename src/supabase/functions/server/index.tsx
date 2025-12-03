@@ -54,6 +54,18 @@ app.get("/make-server-b5fd51b8/health", (c) => {
   return c.json({ status: "ok", timestamp: new Date().toISOString() });
 });
 
+// Debug endpoint - Check environment variables (DO NOT USE IN PRODUCTION)
+app.get("/make-server-b5fd51b8/debug/env", (c) => {
+  return c.json({
+    hasSupabaseUrl: !!Deno.env.get("SUPABASE_URL"),
+    hasServiceRoleKey: !!Deno.env.get("SUPABASE_SERVICE_ROLE_KEY"),
+    hasAnonKey: !!Deno.env.get("SUPABASE_ANON_KEY"),
+    hasDbUrl: !!Deno.env.get("SUPABASE_DB_URL"),
+    supabaseUrlPreview: Deno.env.get("SUPABASE_URL")?.substring(0, 30) + "...",
+    denoVersion: Deno.version.deno,
+  });
+});
+
 // ==============================================
 // AUTH / USER PROFILE ROUTES
 // ==============================================
