@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window"],
+    "strict": true
+  },
+  "imports": {
+    "npm:": "https://esm.sh/",
+    "jsr:": "https://esm.sh/"
+  }
+}
