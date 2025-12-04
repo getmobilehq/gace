@@ -1,0 +1,59 @@
+# Labeler configuration for auto-labeling PRs based on changed files
+
+# Frontend changes
+'frontend':
+  - 'components/**/*'
+  - 'pages/**/*'
+  - 'App.tsx'
+  - 'main.tsx'
+  - 'index.html'
+
+# Styling changes
+'styling':
+  - 'styles/**/*'
+  - '**/*.css'
+
+# Backend changes
+'backend':
+  - 'supabase/**/*'
+  - 'utils/supabase/**/*'
+  - 'utils/api/**/*'
+
+# Documentation
+'documentation':
+  - '**/*.md'
+  - 'docs/**/*'
+
+# Configuration
+'configuration':
+  - 'package.json'
+  - 'vite.config.ts'
+  - 'tsconfig*.json'
+  - 'netlify.toml'
+  - '.github/**/*'
+
+# Dependencies
+'dependencies':
+  - 'package-lock.json'
+  - 'package.json'
+
+# UI Components
+'ui-components':
+  - 'components/ui/**/*'
+
+# Testing
+'testing':
+  - '**/*.test.ts'
+  - '**/*.test.tsx'
+  - '**/*.spec.ts'
+  - '**/*.spec.tsx'
+
+# CI/CD
+'ci/cd':
+  - '.github/workflows/**/*'
+  - 'netlify.toml'
+
+# Security
+'security':
+  - '.env.example'
+  - 'utils/supabase/auth*'

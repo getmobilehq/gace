@@ -1,5 +1,12 @@
 # GACE - Global Asset Compliance Engine
 
+[![CI Pipeline](https://github.com/dju78/Gaceapp/actions/workflows/ci.yml/badge.svg)](https://github.com/dju78/Gaceapp/actions/workflows/ci.yml)
+[![Deploy to Netlify](https://github.com/dju78/Gaceapp/actions/workflows/deploy.yml/badge.svg)](https://github.com/dju78/Gaceapp/actions/workflows/deploy.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_SITE_ID/deploy-status)](https://app.netlify.com/sites/YOUR_NETLIFY_SITE_NAME/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue)](https://www.typescriptlang.org/)
+
 A RegTech platform for UK residents with overseas assets to manage tax compliance with HMRC. Built as an MVP demo for Innovator Founder endorsement presentations.
 
 ![GACE Platform](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=400&fit=crop)
