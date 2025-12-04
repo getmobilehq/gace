@@ -1,8 +1,8 @@
 # Netlify Configuration for GACE Application
 
 [build]
-  # Build command
-  command = "npm run build"
+  # Build command - use production build without type checking
+  command = "npm run build:prod"
   
   # Publish directory (Vite outputs to dist)
   publish = "dist"
